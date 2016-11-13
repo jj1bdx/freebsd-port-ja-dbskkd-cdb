@@ -2,18 +2,18 @@
 # $FreeBSD: head/japanese/dbskkd-cdb/Makefile 424321 2016-10-20 11:54:47Z ume $
 
 PORTNAME=	dbskkd-cdb
-PORTVERSION=	2.00
-PORTREVISION=	1
+PORTVERSION=	3.00
+PORTREVISION=	0
 CATEGORIES=	japanese
-MASTER_SITES=	GOOGLE_CODE
+MASTER_SITES=	GH
 
 MAINTAINER=	kenji@k2r.org
-COMMENT=	Yet another dictionary server for SKK
+COMMENT=	SKK dictionary server based on cdb
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jj1bdx
 GH_PROJECT=	dbskkd-cdb
-GH_TAGNAME=	2.00-20161005
+GH_TAGNAME=	3.00
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libcdb.a:databases/tinycdb
 RUN_DEPENDS=	${SKKJISYOCDB}:japanese/skk-jisyo-cdb
@@ -29,8 +29,8 @@ MAKE_ENV+=	LOCALBASE="${LOCALBASE}"
 MAKE_ENV+=	SKKJISYOCDB="${SKKJISYOCDB}"
 
 PORTDOCS=	${PORTDOCS_FILE} ${PORTDOCS_SH}
-PORTDOCS_FILE=	CHANGES LICENSE READMEJP.md \
-		example-daemontools.txt example-inetd.txt
+PORTDOCS_FILE=	CHANGES.md LICENSE README.md READMEJP.md \
+		examples.md skk-server-protocol.md
 PORTDOCS_SH=	makeskkcdb.sh skktocdbm.sh
 
 OPTIONS_DEFINE=	DOCS
