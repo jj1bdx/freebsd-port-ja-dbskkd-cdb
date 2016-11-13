@@ -12,4 +12,4 @@ A quick fix for the Port `japanese/ja-dbskkd-cdb`
 
 ## See also
 
-* [GitHub dbskkd-cdb repository with tag `2.00-20161605`](https://github.com/jj1bdx/dbskkd-cdb/tree/2.00-20161005)
+* [GitHub dbskkd-cdb repository](https://github.com/jj1bdx/dbskkd-cdb/)
