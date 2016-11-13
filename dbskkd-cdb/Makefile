@@ -1,5 +1,5 @@
 # Created by: Makoto Matsushita <matusita@jp.FreeBSD.ORG>
-# $FreeBSD: head/japanese/dbskkd-cdb/Makefile 422140 2016-09-14 15:59:34Z mat $
+# $FreeBSD: head/japanese/dbskkd-cdb/Makefile 424321 2016-10-20 11:54:47Z ume $
 
 PORTNAME=	dbskkd-cdb
 PORTVERSION=	2.00
@@ -7,10 +7,8 @@ PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	GOOGLE_CODE
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kenji@k2r.org
 COMMENT=	Yet another dictionary server for SKK
-
-#BROKEN=		Unfetchable (google code has gone away)
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jj1bdx
